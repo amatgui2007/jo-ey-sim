@@ -1,0 +1,12 @@
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/ProjectIgnis/CardScripts.git
+[submodule "client"]
+	path = client
+	url = https://github.com/amatgui2007/jo-ey-sim-client.git
+[submodule "data/official"]
+	path = data/official
+	url = https://github.com/ProjectIgnis/BabelCDB.git
+[submodule "data/distribution"]
+	path = data/distribution
+	url = https://github.com/ProjectIgnis/Distribution.git

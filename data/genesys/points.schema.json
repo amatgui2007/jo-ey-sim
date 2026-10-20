@@ -1,0 +1,28 @@
+{
+"$$id": "https://jo-ey-sim.local/genesys/points.schema.json",
+"title": "Genesys Points List",
+"type": "object",
+"required": ["version", "date", "cap", "source", "points"],
+"additionalProperties": false,
+"properties": {
+"version": { "type": "string", "description": "Identificador de versión, p. ej. 2026-06" },
+"date": { "type": "string", "format": "date" },
+"cap": { "type": "integer", "minimum": 0, "default": 100 },
+"source": { "type": "string", "enum": ["konami", "community", "manual"] },
+"source_url": { "type": "string", "format": "uri" },
+"notes": { "type": "string" },
+"points": {
+"type": "array",
+"items": {
+"type": "object",
+"required": ["card_id", "points"],
+"additionalProperties": false,
+"properties": {
+"card_id": { "type": "integer" },
+"card_name": { "type": "string" },
+"points": { "type": "integer", "minimum": 0 }
+}
+}
+}
+}
+}

@@ -1,0 +1,33 @@
+{
+"api": {
+"base_url": "https://db.ygoprodeck.com/api/v7",
+"check_db_version": "checkDBVer.php",
+"cardinfo": "cardinfo.php",
+"rate_limit_per_second": 15,
+"cache": {
+"cardinfo_ttl_days": 2,
+"check_db_version_ttl_minutes": 10
+}
+},
+"paths": {
+"official_data": "data/official",
+"images": "data/images/ygoprodeck",
+"logs": "logs"
+},
+"images": {
+"variant": "image_url",
+"sources": [
+{ "id": "ygoprodeck", "priority": 1, "enabled": true },
+{ "id": "edopro", "priority": 2, "enabled": true },
+{ "id": "yugipedia", "priority": 3, "enabled": true },
+{ "id": "fandom_es", "priority": 4, "enabled": false }
+]
+},
+"languages": {
+"card_text_priority": [
+{ "code": "es", "name": "Español", "enabled": true },
+{ "code": "en", "name": "English", "enabled": true },
+{ "code": "ja", "name": "日本語", "enabled": false }
+]
+}
+}

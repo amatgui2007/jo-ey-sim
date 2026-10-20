@@ -1,0 +1,14 @@
+{
+"version": "2026-06",
+"date": "2026-06-01",
+"cap": 100,
+"source": "community",
+"source_url": "https://example.com/genesys/2026-06",
+"notes": "Ejemplo NO oficial. Reemplazar por datos reales de Konami.",
+"points": [
+{ "card_id": 55144522, "card_name": "Pot of Greed", "points": 30 },
+{ "card_id": 83764718, "card_name": "Monster Reborn", "points": 5 },
+{ "card_id": 53129443, "card_name": "Dark Hole", "points": 1 },
+{ "card_id": 18144506, "card_name": "Harpie's Feather Duster", "points": 9 }
+]
+}

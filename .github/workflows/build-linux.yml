@@ -1,0 +1,29 @@
+name: build-linux
+on:
+push:
+branches: [main]
+pull_request:
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+* uses: actions/checkout@v4
+with:
+submodules: recursive
+* name: Install deps
+run: |
+sudo apt-get update
+sudo apt-get install -y build-essential cmake git
+qtbase5-dev qttools5-dev-tools
+libsqlite3-dev lua5.3 liblua5.3-dev
+meson ninja-build
+* name: Install premake5
+run: |
+mkdir -p "$$HOME/.local/bin"
+chmod +x "$$HOME/.local/bin" >> "$GITHUB_PATH"
+* name: Build client
+run: |
+cd client
+premake5 gmake2
+cd build
+make config=release -j"$(nproc)"
