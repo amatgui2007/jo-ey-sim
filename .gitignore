@@ -1,4 +1,4 @@
-Build
+# Build
 build/
 out/
 dist/
@@ -8,43 +8,54 @@ dist/
 *.exe
 *.dll
 *.dylib
-CMake
+
+# CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
 compile_commands.json
-Qt
-.moc
-moc_.cpp
-ui_.h
-qrc_.cpp
+
+# Qt
+*.moc
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
 .qmake.stash
-Python
-pycache/
+
+# Python
+__pycache__/
 *.pyc
 .venv/
 venv/
 *.egg-info/
-Generated data
-data/official/.cdb
-data/official/.sqlite
-data/official/cardinfo.page..json
+
+# Downloaded dependencies (build.sh)
+.deps/
+
+# Generated data
+data/official/*.cdb
+data/official/*.sqlite
+data/official/cardinfo.page.*.json
 data/official/sync.manifest.json
-data/spanish/.cdb
-data/custom/.cdb
+data/spanish/*.cdb
+data/custom/*.cdb
 data/images/
-data/genesys/.generated.json
-IDE
+data/genesys/*.generated.json
+
+# IDE
 .vscode/
 .idea/
 *.swp
-OS
+
+# OS
 .DS_Store
 Thumbs.db
-Logs
+
+# Logs
 *.log
 logs/
-Local config
+
+# Local config
 config.local.json
 config.json
